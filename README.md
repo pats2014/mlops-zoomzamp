@@ -1,3 +1,2 @@
 # mlops-zoomzamp
-
-This is first commit
+Hello everyone, Im learning here
