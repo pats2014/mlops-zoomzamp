@@ -1,2 +1,2 @@
 # mlops-zoomzamp
-Hello everyone, Im learning here
+Hello everyone, Im learning here.
