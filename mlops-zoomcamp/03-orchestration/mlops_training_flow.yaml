@@ -1,0 +1,15 @@
+id: mlops-training-flow
+namespace: my.company.mlops
+
+tasks:
+  - id: run-mlops-pipeline
+    type: io.kestra.plugin.scripts.python.Script
+    docker:
+      image: python:3.12
+    script: |
+      cd /scripts
+      pip install -r requirements.txt
+      python mlops_pipeline.py
+    workingDir: /scripts
+    env:
+      MLFLOW_TRACKING_URI: "http://localhost:5000"  # or "http://host.docker.internal:5000" if MLflow is outside docker
